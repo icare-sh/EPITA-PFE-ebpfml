@@ -1,12 +1,18 @@
-# ebpfangel - Ransomware Detection using Machine Learning with eBPF for Linux
+# EPITA-ebpf-detection - Ransomware Detection using Machine Learning with eBPF for Linux
 
 Authors: Max Willers, Tomás Philippart
 
 ## Overview
 
-This is the final result of an Offensive Technologies research project for the MSc Security and Network Engineering program of the University of Amsterdam. This is not intended to be a final product/solution to use in any productions environment whatsoever, it is simply the byproduct of research and therefore is intended to use as so. 
+This project is based on a paper written by 
+Max Willers, Tomás Philippart which you can find [here](https://github.com/TomasPhilippart/ebpfangel/blob/main/docs/Ransomware_Detection_using_Machine_Learning_with_eBPF.pdf).  
+The paper written by Max Willers and Tomás Philippart talks about the creation of a ransomeware detector using ebpf using machine learning. The paper on their realization highlighted a number of limitations, including data imbalance. Indeed, modeling data on ransomeware behavior can be tedious, given that you need to launch ransomeware in order to analyze its behavior.  
+As part of our project, we decided to take up this challenge by following two distinct but overlapping paths.
 
-Slides: https://github.com/TomasPhilippart/ebpfangel/blob/main/docs/ebpfangel-presentation.pdf
+The first is to generate more ransomeware data by using many more ransomewares.
+The second is to use unbalanced data management methods.
+
+Translated with DeepL.com (free version)
 
 Paper: https://github.com/TomasPhilippart/ebpfangel/blob/main/docs/Ransomware_Detection_using_Machine_Learning_with_eBPF.pdf
 
