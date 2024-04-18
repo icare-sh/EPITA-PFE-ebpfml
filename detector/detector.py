@@ -167,7 +167,8 @@ if __name__ == '__main__':
     if not runas_root():
         print("You must run this program as root or with sudo.")
         sys.exit()
-    
-    f = open('log.csv', 'w', encoding='UTF8', newline='') # deixa ^M no fim!
+
+    str_file = f'log_{time.strftime("%Y%m%d-%H%M%S")}.csv'
+    f = open(str_file, 'w', encoding='UTF8', newline='') # deixa ^M no fim!
     writer = csv.writer(f)
     main()

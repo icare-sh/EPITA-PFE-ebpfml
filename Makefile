@@ -11,7 +11,7 @@ malware:
 
 prep:
 	@echo "Running dataprep..."
-	@mv detector/log.csv ./logs
+	@mv detector/*.csv logs/training
 	@cd machinelearning && python3 dataprep.py
 
 soutenance: detector malware prep
