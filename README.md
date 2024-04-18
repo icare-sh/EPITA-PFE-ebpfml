@@ -12,8 +12,6 @@ As part of our project, we decided to take up this challenge by following two di
 The first is to generate more ransomeware data by using many more ransomewares.
 The second is to use unbalanced data management methods.
 
-Translated with DeepL.com (free version)
-
 Paper: https://github.com/TomasPhilippart/ebpfangel/blob/main/docs/Ransomware_Detection_using_Machine_Learning_with_eBPF.pdf
 
 ## Software architecture
