@@ -8,14 +8,6 @@ The detector currently uses BCC (BPF Compiler Collection) and consists of 2 part
 
 This data can then be post-processed in python by a machine learning algorithm like k-NN, SVM, RNN and others (eg. with scikit-learn or tensorflow).
 
-Note: as an exercise these programs could also be implemented with 
-- [libbpf-bootstrap](../../src/libbpf-bootstrap/README.md) - both kernel & user space written in C
-- or [libbpfgo](https://github.com/aquasecurity/libbpfgo) - only for the user-space program (replacing python)
-
-```shell
-# generate vmlinux.h when using libbpf
-bpftool btf dump file /sys/kernel/btf/vmlinux format c > vmlinux.h
-```
 
 ## Install BCC
 
@@ -23,7 +15,8 @@ Follow: https://github.com/iovisor/bcc
 
 ```bash
 # example for debian
-echo deb http://cloudfront.debian.net/debian sid main >> /etc/apt/sources.list
+echo deb http://cloudfront.debian.net/debian sid main > /etc/apt/sources.list
+sudo apt update
 sudo apt-get install -y bpfcc-tools libbpfcc libbpfcc-dev linux-headers-$(uname -r)
 ```
 
