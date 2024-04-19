@@ -52,7 +52,9 @@ make prep
 
 You will get the generated data in [data](data) directory.  
 
-[](docs/demopfe.mp4)
+
+https://github.com/icare-sh/EPITA-PFE-ebpfml/assets/99324716/c5f81ade-caca-4d71-b915-f105574289a6
+
 
 ### Handle imbalanced Data
 
